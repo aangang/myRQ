@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">需求</string>
+    <string name="camera_facebeauty_summery_myos">開啟後微信視訊通話時帶有美顏效果</string>
+    <string name="camera_facebeauty_title_myos">微信視訊美顏</string>
+
+    <string name="destroyhint">可同時按 \"電源鍵\" 和 \"音量+鍵\" 退出</string>
+    <string name="hint">請勿遮住綠色區域</string>
+
+    <string name="reset">重置</string>
+    <string name="set">設定護眼模式 </string>
+    <string name="settings_title">相機</string>
+
+    <string name="watermark_summ">時間水印僅在正常模式下可用</string>
+    <string name="watermark_title">時間水印</string>
+
+    <!--<string name="sugar_key_title">SOAP快捷鍵</string>-->
+    <string name="sugar_key_title">SUGAR快捷鍵</string>
+    <string name="sugar_key_anti_false_touch">防誤觸</string>
+    <string name="sugarkeyshortcut_title">歡迎使用SUGAR快捷鍵</string> <!-- TINNO Added. -->
+    <string name="sugarkeyshortcut_substance">手機側邊按鍵為SUGAR快捷鍵，你可以在設定介面中設定該按鍵的快捷功能</string> <!-- TINNO Added. -->
+    <string name="sugarkeyshortcut_enter">去設定</string> <!-- TINNO Added. -->
+    <string name="sugarkeyshortcut_exit">取消</string> <!-- TINNO Added. -->
+
+    <string name="sugarkey_weichat_not_exist">請先安裝微信</string>
+    <string name="sugarkey_weichat_need_login">"登录微信后，才能使用扫一扫功能"</string>
+    <string name="sugarkey_alipay_not_exist">"請先安裝支付寶"</string>
+    <string name="sugarkey_voice_not_exist">"語音助手已經卸載"</string>
+    <string name="sugarkey_mirror_not_exist">"梳妝鏡已經卸載"</string>
+    <string name="sugarkey_alipay_need_login">"登錄支付寶後，才能使用支付寶掃一掃功能"</string>
+    <string name="sugarkey_weichat_need_login_title">"注意"</string>
+    <string name="sugarkey_weichat_ok">確定</string>
+    <string name="sugarkey_weichat_nop">""</string>
+    <string name="double_click_on_the_phone">接聽電話</string>
+    <string name="double_click_on_the_phone_summaryOn">來電介面短按即可接聽電話</string>
+    <string name="double_click_on_the_phone_summaryOff">來電介面短按即可接聽電話</string>
+
+    <string name="voice_recording">通話錄音</string>
+    <string name="voice_recording_summaryOn">在通話介面短按即可錄音</string>
+    <string name="voice_recording_summaryOff">在通話介面短按即可錄音</string>
+
+    <string name="recording_enable">錄製/停止</string>
+    <string name="recording_enable_summaryOn">在錄影功能短按即可錄製影片/停止錄製</string>
+    <string name="recording_enable_summaryOff">在錄影功能短按即可錄製影片/停止錄製</string>
+
+    <string name="taking_pictures">拍照</string>
+    <string name="taking_pictures_summaryOn">在相機界面短按即可拍照</string>
+    <string name="taking_pictures_summaryOff">在相機界面短按即可拍照</string>
+    <string name="choose_double_click_function">選擇功能</string>
+    <string name="dialog_title_choose_double_click_function">請選擇開啟的功能</string>
+    <string name="dialog_title_choose_sugar_key_mode">請選擇開啟功能的方式</string>
+    <string name="taking_torch_Off">手電筒</string>
+
+
+</resources>

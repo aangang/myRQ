@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/app_name"
+    >
+    <SwitchPreference
+        android:key="watermark"
+        android:title="@string/watermark_title"
+        android:summary="@string/watermark_summ"
+        />
+    <SwitchPreference
+        android:key="facebeauty"
+        android:title="@string/camera_facebeauty_title_myos"
+        android:summary="@string/camera_facebeauty_summery_myos"
+        />
+</PreferenceScreen>

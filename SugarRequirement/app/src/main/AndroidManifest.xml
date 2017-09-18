@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ape.sugarrequirement"
+    android:sharedUserId="android.uid.system"
+    coreApp="true"
+    >
+    <uses-sdk
+        android:minSdkVersion="21"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--for eyeprevent -->
+    <uses-permission android:name="com.qti.snapdragon.sdk.permission.DISPLAY_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- PKS-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:persistent="true"
+        android:resizeableActivity="false"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@style/Settings">
+
+<!--        <uses-library
+            android:name="com.qti.snapdragon.sdk.display"
+            android:required="true" />-->
+
+        <!--test functions -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+
+        <!-- camera settings-->
+        <activity android:name=".camera.settings.SettingsActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/settings_title"
+            android:icon="@drawable/default_camera_icon"
+            android:theme="@style/Settings"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+            <intent-filter android:priority="8">
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ape" />
+            <meta-data android:name="com.android.settings.title"
+                android:resource="@string/settings_title" />
+        </activity>
+
+        <!-- ota apk and settings db -->
+        <service android:name="com.ape.sugarrequirement.ota.OtaApksService">
+            <intent-filter >
+                <action android:name="android.intent.action.OTAAPKSERVICE"/>
+            </intent-filter>
+        </service>
+
+        <!--eyeprevent for qcom-->
+        <activity
+            android:name="com.ape.sugarrequirement.eyeprevent.EyePreventControler"
+            android:theme="@android:style/Theme.Translucent"
+            android:excludeFromRecents="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.QCOM_EYEPREVENT"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.ape.sugarrequirement.eyeprevent.EyePreventCameraService">
+            <intent-filter >
+                <action android:name="android.intent.action.QCOM_EYEPREVENT_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <service android:name="com.ape.sugarrequirement.service.SugarRequirementService"
+            android:exported="true"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.SUGAR_REQUIREMENT_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <!--smart key -->
+
+        <activity android:name=".smartkey.SmartKeyStartActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/sugar_key"
+            android:label="@string/sugar_key_title"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+
+        <activity android:name=".smartkey.SmartKeyActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/sugar_key"
+            android:label="@string/sugar_key_title"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            >
+
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.smart" />
+            <meta-data android:name="com.android.settings.title"
+                android:resource="@string/sugar_key_title" />
+        </activity>
+
+        <service android:name="com.ape.sugarrequirement.smartkey.SmartKeyService">
+            <intent-filter >
+                <action android:name="com.android.smartkey.SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <!--boot receiver -->
+        <receiver android:name="com.ape.sugarrequirement.receiver.BootReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.android.start_smartkey"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".widget.SugarListActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/sugar_key_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Settings"
+            >
+            <intent-filter android:priority="1">
+                <action android:name="com.android.smart_key.list.choose"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- PKS-->
+        <activity android:name=".pks.PKSActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Transparent"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

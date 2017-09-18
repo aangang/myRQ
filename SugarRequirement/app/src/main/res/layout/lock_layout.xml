@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:weightSum="1"
+    android:background="#ff000000"
+    android:id="@+id/lockView">
+
+    <TextView
+        android:id="@+id/reminder"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#cdffffff"
+        android:fontFamily="sans-serif"
+        android:text="@string/hint"
+        />
+
+    <TextView
+        android:id="@+id/destroyreminder"
+        android:layout_below="@+id/reminder"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/reminder"
+        android:layout_marginBottom="37dp"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="#99ffffff"
+        android:fontFamily="sans-serif"
+        android:text="@string/destroyhint"
+        />
+
+    <ImageView
+        android:id="@+id/lockscreen"
+        android:layout_width="152.3dp"
+        android:layout_height="286.6dp"
+        android:screenOrientation="portrait"
+        android:layout_below="@+id/destroyreminder"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
+
+

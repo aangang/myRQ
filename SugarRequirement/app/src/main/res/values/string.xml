@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">requirement</string>
+    <string name="watermark_title">Watermark</string>
+    <string name="watermark_summ">Enable watermark</string>
+
+    <string name="camera_facebeauty_title_myos">"Vedio facebeauty"</string>
+    <string name="camera_facebeauty_summery_myos">"After turning on,WeChat video call with a beauty effect"</string>
+    <string name="destroyhint">可同時按 \"電源鍵\" 和 \"音量+鍵\" 退出</string>
+    <string name="hint">請勿遮住綠色區域</string>
+
+    <string name="reset">reset</string>
+    <string name="set">set eyeprevent</string>
+    <string name="settings_title">Camera</string>
+
+    <!--<string name="sugar_key_title">SOAP KEY</string>-->
+    <string name="sugar_key_title">SUGAR KEY</string>
+    <string name="sugar_key_anti_false_touch">Anti false touch</string>
+    <string name="sugarkeyshortcut_title">Welcome to the SUGAR shortcut</string> <!-- TINNO Added. -->
+    <string name="sugarkeyshortcut_substance">Phone side keys for the SUGAR shortcut keys, you can then set the interface to set the shortcut function of the button</string> <!-- TINNO Added. -->
+    <string name="sugarkeyshortcut_enter">Enter</string> <!-- TINNO Added. -->
+    <string name="sugarkeyshortcut_exit">Canel</string> <!-- TINNO Added. -->
+
+    <string name="sugarkey_weichat_not_exist">"Please install WeChat first"</string>
+    <string name="sugarkey_weichat_need_login">"Please login WeChat first to use the WeChat QRCode"</string>
+    <string name="sugarkey_alipay_not_exist">"Please install alipay first"</string>
+    <string name="sugarkey_mirror_not_exist">"The Mirror has been uninstall"</string>
+    <string name="sugarkey_voice_not_exist">"The Speech Assist has been uninstall"</string>
+    <string name="sugarkey_alipay_need_login">"Please login Alipay first to use the Alipay QRCode"</string>
+    <string name="sugarkey_weichat_need_login_title">"Attention"</string>
+    <string name="sugarkey_weichat_nop">""</string>
+    <string name="sugarkey_weichat_ok">Ok</string>
+
+    <string name="double_click_on_the_phone">Answer the call</string>
+    <string name="double_click_on_the_phone_summaryOn">Short press to answer the call</string>
+    <string name="double_click_on_the_phone_summaryOff">Short press to answer the call</string>
+
+    <string name="voice_recording">Voice recording</string>
+    <string name="voice_recording_summaryOn">Voice recording on</string>
+    <string name="voice_recording_summaryOff">Voice recording on</string>
+
+    <string name="recording_enable">recording_enable</string>
+    <string name="recording_enable_summaryOn">recording enable</string>
+    <string name="recording_enable_summaryOff">recording enable</string>
+
+    <string name="taking_pictures">Taking pictures</string>
+    <string name="taking_pictures_summaryOn">Taking pictures on</string>
+    <string name="taking_pictures_summaryOff">Taking pictures on</string>
+
+    <string name="choose_double_click_function">Choose function</string>
+    <string name="dialog_title_choose_double_click_function">Choose function</string>
+    <string name="dialog_title_choose_sugar_key_mode">How to choose function</string>
+    <string name="summary_double_touch" translatable="false">%1$s</string>
+    <string name="taking_torch_Off">Torch</string>
+</resources>

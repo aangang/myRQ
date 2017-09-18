@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="animation_activity" parent="@style/Animation.Ape.Settings">
+        <item name="android:taskOpenEnterAnimation">@anim/task_open_enter</item>
+        <item name="android:wallpaperCloseEnterAnimation">@anim/task_open_enter</item>
+    </style>
+
+    <!--<item name="android:navigationBarColor">@android:color/white</item>-->
+    <style name="Settings" parent="Theme.Ape.Light.Replace">
+        <item name="android:statusBarColor">@color/bar_color</item>
+        <item name="android:windowAnimationStyle">@style/animation_activity</item>
+        <!--<item name="android:windowAnimationStyle">@style/Animation.Activity</item>-->
+        <item name="*android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/bar_color</item>
+        <item name="android:switchPreferenceStyle">@*android:style/Preference.Material.SwitchPreference</item>
+    </style>
+
+    <style name="Transparent" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:backgroundDimEnabled">false</item>　　
+    </style>
+
+    <style name="Theme.Ape.Settings" parent="Theme.Ape.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.Ape.Light.ActionBar.Solid</item>
+        <item name="android:alertDialogStyle">@style/AlertDialog.Ape.Light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/material_grey_100</item>
+        <item name="android:navigationBarColor">@color/bar_color</item>
+        <item name="android:colorPrimary">@color/primary_material_light</item>
+        <item name="android:textColorPrimary">@color/primary_text_default_material_light</item>
+        <item name="android:colorAccent">@color/primary_text_color_default</item>
+        <item name="@*android:presentationTheme">@style/Theme.Ape.Settings.Dialog.Presentation</item>
+        <item name="@*android:searchDialogTheme">@style/Theme.Ape.Settings.SearchBar</item>
+        <item name="@*android:panelMenuListTheme">@style/Theme.Ape.Settings.CompactMenu</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Ape.Settings</item>
+    </style>
+</resources>

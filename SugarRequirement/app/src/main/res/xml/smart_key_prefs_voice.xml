@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/sugar_key_title"
+    >
+    <Preference
+        android:key="smart_key_touch_mode"
+        android:title="@string/dialog_title_choose_sugar_key_mode"
+        android:summary="@string/summary_double_touch"
+        android:entries="@array/sugar_key_mode_list"
+        android:entryValues="@array/sugar_key_mode_list_values"
+        android:dialogTitle="@string/dialog_title_choose_sugar_key_mode" />
+
+    <Preference
+        android:key="smart_key_start_mode_voice"
+        android:title="@string/dialog_title_choose_double_click_function"
+        android:summary="@string/summary_double_touch"
+        android:entries="@array/double_touch_list_alipay_voice"
+        android:entryValues="@array/double_touch_list_alipay_voice_values"
+        android:dialogTitle="@string/dialog_title_choose_double_click_function" />
+
+
+    <SwitchPreference android:key="sugar_click_answer_the_phone"
+        android:defaultValue="true"
+        android:title="@string/double_click_on_the_phone"
+        android:summaryOn="@string/double_click_on_the_phone_summaryOn"
+        android:summaryOff="@string/double_click_on_the_phone_summaryOff"
+        />
+    <SwitchPreference android:key="sugar_voice_recording"
+        android:defaultValue="true"
+        android:title="@string/voice_recording"
+        android:summaryOn="@string/voice_recording_summaryOn"
+        android:summaryOff="@string/voice_recording_summaryOff"
+        />
+
+    <SwitchPreference android:key="sugar_recording_enable"
+        android:defaultValue="true"
+        android:title="@string/recording_enable"
+        android:summaryOn="@string/recording_enable_summaryOn"
+        android:summaryOff="@string/recording_enable_summaryOff"
+        />
+
+    <SwitchPreference android:key="sugar_false_touch"
+        android:title="@string/sugar_key_anti_false_touch"
+        />
+
+</PreferenceScreen>

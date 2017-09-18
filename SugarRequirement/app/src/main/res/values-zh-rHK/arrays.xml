@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--smart key  start-->
+    <string-array name="sugar_key_mode_list">
+        <item>"長按"</item>
+        <item>"短按"</item>
+        <item>"無"</item>
+    </string-array>
+    <string-array name="sugar_key_mode_list_values" translatable="true">
+        <item>LongPress</item>
+        <item>ShortPress</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="double_touch_list">
+        <item>錄影</item>
+        <item>錄音</item>
+        <item>梳妝鏡</item>
+        <item>拍照</item>
+        <item>手電筒</item>
+        <item>微信掃一掃</item>
+    </string-array>
+
+    <string-array name="double_touch_list_alipay">
+        <item>"錄影"</item>
+        <item>"錄音"</item>
+        <item>"梳妝鏡"</item>
+        <item>"拍照"</item>
+        <item>"手電筒"</item>
+        <item>"微信掃一掃"</item>
+        <item>"支付寶掃一掃"</item>
+    </string-array>
+
+    <string-array name="double_touch_list_tw">
+        <item>"錄影"</item>
+        <item>"錄音"</item>
+        <item>"梳妝鏡"</item>
+        <item>"拍照"</item>
+        <item>"手電筒"</item>
+    </string-array>
+
+    <string-array name="double_touch_list_alipay_voice">
+        <item>"錄影"</item>
+        <item>"錄音"</item>
+        <item>"梳妝鏡"</item>
+        <item>"拍照"</item>
+        <item>"手電筒"</item>
+        <item>"微信掃一掃"</item>
+        <item>"支付寶掃一掃"</item>
+        <item>"語音助手"</item>
+    </string-array>
+
+    <!--smart key  end-->
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--smart key  start-->
+    <string-array name="sugar_key_mode_list">
+        <item>"Long press"</item>
+        <item>"Short press"</item>
+        <item>"Off"</item>
+    </string-array>
+    <string-array name="sugar_key_mode_list_values" translatable="true">
+        <item>LongPress</item>
+        <item>ShortPress</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="double_touch_list">
+        <item>CameraVideo</item>
+        <item>Voice</item>
+        <item>Mirror</item>
+        <item>CameraCapture</item>
+        <item>Torch</item>
+        <item>QRCode</item>
+    </string-array>
+
+    <string-array name="double_touch_list_values" translatable="false">
+        <item>CameraVideo</item>
+        <item>Voice</item>
+        <item>Mirror</item>
+        <item>CameraCapture</item>
+        <item>Torch</item>
+        <item>QRCode</item>
+    </string-array>
+
+    <string-array name="double_touch_list_alipay">
+        <item>CameraVideo</item>
+        <item>Voice</item>
+        <item>Mirror</item>
+        <item>CameraCapture</item>
+        <item>Torch</item>
+        <item>QRCode</item>
+        <item>AlipayQRCode</item>
+    </string-array>
+
+    <string-array name="double_touch_list_tw">
+        <item>CameraVideo</item>
+        <item>Voice</item>
+        <item>Mirror</item>
+        <item>CameraCapture</item>
+        <item>Torch</item>
+    </string-array>
+
+    <string-array name="double_touch_list_alipay_voice">
+        <item>CameraVideo</item>
+        <item>Voice</item>
+        <item>Mirror</item>
+        <item>CameraCapture</item>
+        <item>Torch</item>
+        <item>QRCode</item>
+        <item>AlipayQRCode</item>
+        <item>VoiceAssistant</item>
+    </string-array>
+    <string-array name="double_touch_list_alipay_values" translatable="false">
+        <item>CameraVideo</item>
+        <item>Voice</item>
+        <item>Mirror</item>
+        <item>CameraCapture</item>
+        <item>Torch</item>
+        <item>QRCode</item>
+        <item>AlipayQRCode</item>
+    </string-array>
+    <string-array name="double_touch_list_alipay_voice_values" translatable="false">
+        <item>CameraVideo</item>
+        <item>Voice</item>
+        <item>Mirror</item>
+        <item>CameraCapture</item>
+        <item>Torch</item>
+        <item>QRCode</item>
+        <item>AlipayQRCode</item>
+        <item>VoiceAssistant</item>
+    </string-array>
+    <!--smart key  end-->
+</resources>

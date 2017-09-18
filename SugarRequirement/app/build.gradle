@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.ape.sugarrequirement"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 70003
+        versionName "7.0.0.03"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    provided 'com.sugarui.libs:widget-v6.0:0.0.6'
+    //compile 'com.sugarui.libs:theme-v6.0:0.0.6@aar'
+    compile(name:'myos-release', ext:'aar')
+    compile files('libs/sugar_hide_classes.jar')
+    compile files('libs/display.jar')
+}
